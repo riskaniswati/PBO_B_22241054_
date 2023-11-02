@@ -1,27 +1,22 @@
-package com.tutorial;
+package COM.tutorial;
 
-class Mahasiswa {
-String nama;
-String nim;
-String prodi;
+class Polos{
+   String dataString;
+   int dataInterger;
 }
 
-
 public class Main {
-    public static void main(String[] args) {
-        //instasiasi objek dari calss Mahasiswa
-        Mahasiswa mhs1 = new Mahasiswa();//
-        //memberi atribut pada objek mhs1
-        mhs1.nama = "Riska Niswati Hasanah";
-        mhs1.nim = "22241054";
-        mhs1.prodi = "PTI";
+   public static void main(String[] args) {
+      // intansiasi objek
+      Polos pls = new Polos();
+
+      // memberi nilai pada objek pls
+      pls.dataString = "polos";
+      pls.dataInterger = 110;
+
+      System.out.println("dataString : " + pls.dataString);
+      System.out.println("dataInterger : " + pls.dataInterger);
 
 
-        System.out.println("Nama : " + mhs1.nama);
-        System.out.println("NIM : " + mhs1.nim);
-        System.out.println("Prodi : " + mhs1.prodi);
-
-        
-        
-    }
+   }
 }
