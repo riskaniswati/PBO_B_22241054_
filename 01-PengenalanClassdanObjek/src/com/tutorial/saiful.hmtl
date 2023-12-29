@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Effect</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        #love {
+            font-size: 70px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="love"></div>
+
+    <script>
+        const love = document.getElementById('love');
+        const loveText = "I Love You_Saiful_Bahril";
+
+        let index = 0;
+
+        function showLove() {
+            love.innerText += loveText[index];
+            index++;
+
+            if (index >= loveText.length) {
+                index = 0;
+                love.innerText = "";
+            }
+        }
+
+        setInterval(showLove, 300);
+    </script>
+</body>
+
+</html>
